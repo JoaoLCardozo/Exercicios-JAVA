@@ -15,12 +15,21 @@ public class Questao16 {
         System.out.println("DIgite o valor de c: ");
         double c = sc.nextDouble();
 
-        double delta = Math.pow(b, 2) - (4* a * c);
+        double delta = Math.pow(b, 2) - (4* a * c); 
 
         if (delta < 0) {
             System.out.println("O delta é negativo. A equação não possui raizer reais.");
             System.exit(0);
-        } else if(delta)
+        } else if(delta == 0) {
+        double raizUnica = -b /(2* a);
+        System.out.printf("O delta é zero. A equação possui uma única raiz real: ", raizUnica);
+
+        }else{
+            double raiz1 = (-b + Math.sqrt(delta)) /(2 * a);
+            double raiz2 = (-b - Math.sqrt(delta)) /(2 * a);
+            System.out.printf("O delta é positivo. A equação possui duas raizes reais.");
+            System.out.printf("Raiz 1 : %.2f%n", raiz1);
+            System.out.printf("Raiz 2 : %.2f%n", raiz2);
+        }
     }
-    
 }
