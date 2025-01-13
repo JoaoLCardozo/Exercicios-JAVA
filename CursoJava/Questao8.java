@@ -19,7 +19,7 @@ public class Questao8 {
         if (prod3 < melhor)
         melhor = prod3;
 
-        System.out.printf("O melhor produto a ser comprado é o de : %.2f%n",melhor, "Reais");
+        System.out.printf("O melhor produto a ser comprado é o de : %.2f%n",melhor);
 
     }
     
